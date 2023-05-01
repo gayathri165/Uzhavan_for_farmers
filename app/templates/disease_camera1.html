@@ -1,0 +1,26 @@
+
+{% extends 'layout.html' %} {% block body %}
+<head>
+  <style>
+    body{
+      background-repeat:no-repeat;
+      background-attached:fixed;
+      background-size: cover;
+      background-image:url({{url_for('static',filename='images/yy.jpg')}}) 
+    }
+  </style>
+</head>
+
+<div class="container py-2 mx-auto my-50 h-10 " style="margin: 9rem;">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+          <div class="card card-body" style="justify-content: center; background-color:blanchedalmond">
+            <p class="text-center" style="color: black; font-size: 22px;"><b>Crop</b>:Betel Plant<br>Disease: No disease
+
+              <br/> Don't worry. Your crop is healthy. Keep it up !!!Water the plants correctly and maintain your crop always healthy!!
+      </p>
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

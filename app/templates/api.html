@@ -1,0 +1,62 @@
+{% extends 'layout.html' %} {% block body %}
+<html>
+  <head>
+    <style>
+      body{
+        background-repeat:no-repeat;
+        background-attached:fixed;
+        background-size: cover;
+        background-image:url({{url_for('static',filename='images/gii.gif')}}) 
+      }
+    </style>
+  </head>
+
+      <section class="blog py-5">
+        <div class="container py-md-5">
+          <h3 class="heading mb-sm-5 mb-4 text-center"> Updates</h3>
+          <div class="row blog-grids">
+            <div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+              <a href="https://www.youtube.com/playlist?list=PLeaa9OvXHGLs7BRhEJwdF_uiDh4gfZubr"><img src="{{ url_for('static', filename='images/modi.jpg') }}" class="img-fluid" alt="" /></a>
+             
+                <div class="blog-info">
+      
+                  <h4>PM speaks on Agriculture!
+
+                  </h4>
+      
+                  <p class="mt-2">Prime Minister Modi speaks on Farming and Farmers!!!!!</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+          <a href="https://www.youtube.com/playlist?list=PLeaa9OvXHGLssNDj5SIod9nmBoDAttW7q">  <img src="{{ url_for('static', filename='images/scheme.jpg') }}" class="img-fluid" alt="" /></a>a
+              
+                <div class="blog-info">
+                  <h4>Agricultural Schemes</h4>
+                  <p class="mt-2">Know about the schemes available and get benefitted!</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+      
+              <a href="https://www.youtube.com/playlist?list=PLeaa9OvXHGLutqXMhYvHyd-XKRC9LlUOY"><img src="{{ url_for('static', filename='images/doo.jpg') }}" class="img-fluid" alt=""></a>
+      
+              <!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+           
+                <div class="blog-info">
+                  <h4>Do's and Dont's while farming</h4>
+                  <p class="mt-2">Know About the Do's and Dont's !
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      
+
+  </div>    
+
+  </html>
+  {% endblock %}

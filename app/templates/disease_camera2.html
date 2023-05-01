@@ -1,0 +1,48 @@
+{% extends 'layout.html' %} {% block body %}
+<head>
+  <style>
+    body{
+      background-repeat:no-repeat;
+      background-attached:fixed;
+      background-size: cover;
+      background-image:url({{url_for('static',filename='images/yy.jpg')}}) 
+    }
+  </style>
+</head>
+
+<div class="container py-2 mx-auto my-50 h-10 " style="margin: 9rem;">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+          <div class="card card-body" style="justify-content: center; background-color:blanchedalmond">
+            <p class="text-center" style="color: black; font-size: 22px;"><b>Crop</b>:Mango<br/>Disease: Xanthomonas axonus (Mango bacterial spot)<br/>
+
+               Cause of disease:
+
+        <br/>Mango bacterial spot is one of the most common diseases of mangoes in
+        many areas where it is grown. 
+
+        <br/> 2. The most devastating
+        efect of Mango bacterial spot occur in areas where it rains during the
+        mango flowering and fruit set stages. 
+        <br/> 3. Bacterial growth is favoured by wet or humid weather. It is particularly favoured by rain and
+        wind. <br/>
+
+        <br/>
+
+               Cure for the disease:
+
+
+        <br/>1. Make nurseries for raising rootstocks and scion wood that are known to be free of disease.
+
+        <br/>2. Establish good windbrakes for the trees.
+        
+        <br/>3. Harvest by clipping the fruit stalks, do not tear the fruit off the trees.
+        <br/>4. Wash hands with soap and water before and during the handling of plants to reduce potential spread between plants.
+
+              <br/><br/> 
+      </p>
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock %}
